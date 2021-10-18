@@ -1,0 +1,6 @@
+vosk==0.3.31
+Flask==2.0.2
+pymorphy2==0.9.1
+nltk==3.6.5
+gensim==3.6.0
+natasha==1.4.0
