@@ -4,3 +4,5 @@ pymorphy2==0.9.1
 nltk==3.6.5
 gensim==3.6.0
 natasha==1.4.0
+torch==1.9.1
+pyaspeller==0.2.0
