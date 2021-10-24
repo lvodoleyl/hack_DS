@@ -20,12 +20,10 @@ def asr_with_nlp_models():
     try:
         speller = YandexSpeller()
         text = speller.spelled(text)
-        print(text)
         text = model.enhance_text(text, 'ru')
-        print(text)
         tags = get_tags(text)
         ner = get_text_ner(text)
-        annotation = summarize(text.replace(',', '.'))
+        annotation = summarize(text.replace(',', '.')) if text.split('.') < 4 else summarize(text)
         return jsonify({
             'text': ner,
             'tags': tags,
